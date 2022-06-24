@@ -34,3 +34,17 @@ where Name='Amit'
 
 select salary from employee_payroll
 where StartDate between cast('2022-06-20' as date) and cast('2022-06-24' as date)
+
+/*UC6 - Adding Gender column in employee_table to show the gender of employee*/
+alter table employee_payroll
+Add Gender char
+
+update employee_payroll
+set Gender='M'
+where Id in (1,2,3,5)
+
+update employee_payroll
+set Gender='F'
+where Id=4
+
+select * from employee_payroll

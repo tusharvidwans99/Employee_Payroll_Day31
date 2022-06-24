@@ -15,3 +15,13 @@ StartDate date
 )
 
 drop table employee_payroll
+
+
+/*UC3 - Adding data into the table*/
+
+insert into employee_payroll(Name,Salary,StartDate) values('Suresh', 1000, GETDATE())
+insert into employee_payroll(Name,Salary,StartDate) values('Tushar', 2000, GETDATE())
+insert into employee_payroll(Name,Salary,StartDate) values('Amit', 3000, GETDATE())
+insert into employee_payroll(Name,Salary,StartDate) values('Chaitra',4000, GETDATE())
+insert into employee_payroll(Name,Salary,StartDate) values('Ajay', 5000, GETDATE())
+

@@ -25,3 +25,5 @@ insert into employee_payroll(Name,Salary,StartDate) values('Amit', 3000, GETDATE
 insert into employee_payroll(Name,Salary,StartDate) values('Chaitra',4000, GETDATE())
 insert into employee_payroll(Name,Salary,StartDate) values('Ajay', 5000, GETDATE())
 
+/*UC4 - Retrieving the data which was inserted into the employee_peyroll table*/ 
+select * from employee_payroll

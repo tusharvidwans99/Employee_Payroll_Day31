@@ -48,3 +48,23 @@ set Gender='F'
 where Id=4
 
 select * from employee_payroll
+
+
+/*UC7 - Calculating sum, avg, min, max of salary and count of Female and Male*/
+/*SUM, AVG, MIN, MAX, COUNT*/
+select sum(Salary),Gender from employee_payroll
+GROUP BY Gender
+
+
+select avg(Salary),Gender from employee_payroll
+GROUP BY Gender
+
+select min(Salary),Gender from employee_payroll
+GROUP BY Gender
+
+select max(Salary),Gender from employee_payroll
+GROUP BY Gender
+
+select count(Salary),Gender from employee_payroll
+GROUP BY Gender
+
